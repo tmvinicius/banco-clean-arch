@@ -3,9 +3,11 @@ package com.tmvinicius.banco.usecase;
 import com.tmvinicius.banco.core.Conta;
 import com.tmvinicius.banco.core.exception.ContaNaoEncontradaException;
 import com.tmvinicius.banco.core.exception.SaldoInsuficienteException;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+@Service
 public class SacarUseCase implements ISacar{
 
     private final IContaRepository repo;

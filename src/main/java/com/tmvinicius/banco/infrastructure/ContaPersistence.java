@@ -1,5 +1,6 @@
 package com.tmvinicius.banco.infrastructure;
 
+import com.tmvinicius.banco.core.Conta;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,6 +17,10 @@ public class ContaPersistence {
     private String numeroConta;
     @Column(name = "saldo",nullable = false)
     private BigDecimal saldo;
+
+    public ContaPersistence(){
+
+    }
 
     public ContaPersistence(String numeroConta, BigDecimal saldo) {
         this.numeroConta = numeroConta;

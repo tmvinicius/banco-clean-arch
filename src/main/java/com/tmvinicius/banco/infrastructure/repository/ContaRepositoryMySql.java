@@ -29,6 +29,9 @@ public class ContaRepositoryMySql implements IContaRepository {
 
     @Override
     public Optional<Conta> buscarPorId(String numeroConta) {
+        if (numeroConta == null) {
+            throw new IllegalArgumentException("Número da conta é obrigatório");
+        }
         return repo.findById(numeroConta)
                 .map(contaEntityMapper::toDomain);
     }

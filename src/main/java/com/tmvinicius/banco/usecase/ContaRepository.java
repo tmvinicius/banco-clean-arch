@@ -1,11 +1,10 @@
 package com.tmvinicius.banco.usecase;
 
 import com.tmvinicius.banco.core.Conta;
-import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-public interface IContaRepository {
+public interface ContaRepository {
 
     void salvar(Conta conta);
 

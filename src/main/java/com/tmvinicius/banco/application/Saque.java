@@ -1,17 +1,16 @@
 package com.tmvinicius.banco.application;
 
-import com.tmvinicius.banco.core.Conta;
-import com.tmvinicius.banco.core.exception.SaldoInsuficienteException;
-import com.tmvinicius.banco.usecase.ISacar;
+import com.tmvinicius.banco.usecase.Sacar;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+
 @Service
 public class Saque {
 
-    private final ISacar sacarUseCase;
+    private final Sacar sacarUseCase;
 
-    public Saque(ISacar sacarUseCase) {
+    public Saque(Sacar sacarUseCase) {
         this.sacarUseCase = sacarUseCase;
     }
 

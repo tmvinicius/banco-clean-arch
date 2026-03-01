@@ -1,4 +1,4 @@
-package com.tmvinicius.banco.infrastructure.controller;
+package com.tmvinicius.banco.infrastructure.controller.response;
 
 import java.math.BigDecimal;
 

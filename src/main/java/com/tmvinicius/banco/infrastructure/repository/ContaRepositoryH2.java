@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Repository
 public class ContaRepositoryMySql implements IContaRepository {
 
     private final ICrudRepository repo;
